@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+int a,b;
+printf("Rows:");
+scanf("%d",&a);
+printf("Column:");
+scanf("%d",&b);
+int c[a][b],d[a][b],i,j,sum[a][b];
+for (i = 0; i < a; ++i){
+for (j = 0; j < b; ++j) {
+printf("Enter element a%d%d: ", i, j);
+scanf("%d", &c[i][j]);}}
+for (i = 0; i < a; ++i){
+for (j = 0; j < b; ++j) {
+printf("Enter element b%d%d: ", i, j);
+scanf("%d", &d[i][j]);}}
+for (i = 0; i < a; ++i){
+for (j = 0; j < b; ++j) {
+sum[i][j] = c[i][j] + d[i][j];
+printf("%d   ", sum[i][j]);}
+printf("\n");}
+return 0;}
